@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="js/index.js"></script>
   </head>
   <body>
     <div align="center">
@@ -17,11 +16,16 @@
             <p>Analysis Name</p>
           </td>
           <td>
-            <input type="text" id="txtAnalysisName" value="">
+            <select id="selAnalysisFolders">
+            </select>
+            <input type="button" value="Add Analysis" name="btnAddAnalysis" onclick="CreateNewAnalysis()"/>
           </td>
         </tr>
       </table>
     </div>
 
   </body>
+
+  <script src="js/index.js"></script>
+
 </html>
