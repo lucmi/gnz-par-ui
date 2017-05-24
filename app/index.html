@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div align="center">
@@ -21,9 +23,18 @@
             <input type="button" value="Add Analysis" name="btnAddAnalysis" onclick="CreateNewAnalysis()"/>
           </td>
         </tr>
+        <tr>
+          <td>
+            <div class="disconnectedDot"></div>
+          </td>
+          <td>
+            <div id=SectionSshConnection>
+              <input type="button" id="btnConnect" name="btnConnect" value="Connect to server" enabled="true">
+            </div>
+          </td>
+        </tr>
       </table>
     </div>
-
   </body>
 
   <script src="js/index.js"></script>

@@ -16,6 +16,12 @@ var myDir = null;
       analysisList.appendChild(getOption(dir[i]))
     }
   })
+
+  let btnConnect = document.getElementById('btnConnect')
+  btnConnect.onclick = function(){
+    ipc.send('provide_connection')
+  }
+
 }())
 
 //returns an otption element with the value and inner html of the parameter
